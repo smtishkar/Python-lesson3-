@@ -9,18 +9,18 @@ new_list = [round(list[i] % 1,4) for i in range(len(list))]
 max = 0
 min = 1
 
-for i in range(len(new_list)-1):
+for i in range(len(new_list)-1):            #Ищем максимальную дробную часть
     if max < new_list [i]:
         max = new_list [i]
 
 
-for i in range(len(new_list)):
+for i in range(len(new_list)):                  #Ищем минимальную дробную часть и исключаем 0
     if min > new_list [i] and new_list [i] !=0:
         min = new_list [i]
 
 
 dif = max - min 
-print(round(dif,4))
+print(f"Разница между максимальной и минимальной дробными частями составляет - {round(dif,4)}")
 
 
 

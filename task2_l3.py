@@ -8,7 +8,7 @@
 
 from random import randint
 
-initial_list_len = 8
+initial_list_len = 7
 sum = 0
 list = [randint (0,10) for i in range (initial_list_len)]
 new_list = []
@@ -19,12 +19,12 @@ else:
     len_list =int(initial_list_len/2)+1
 
 # print(len_list)
-print(list)
+print(f"Исходный список {list}")
 
 
 for i in range (len_list):
     mul = list[i] * list [(i+1)*-1]
     new_list.append(mul)
-    print (mul, list [i], list [(i+1)*-1])
+    # print (mul, list [i], list [(i+1)*-1])
 
-print(new_list)
+print(f'Список после перемножения {new_list}')

@@ -16,14 +16,14 @@
 number = int(input('Введите число: '))
 list = []
 
-while number > 0:
+while number > 0:           # переводим в двричную сисему
     res = number % 2
     number = number // 2
     list.append(res)
 
 
 # print (list)
-list.reverse()
+list.reverse()              
 # print (list)
 
 for i in range(len(list)):
